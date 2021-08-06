@@ -1,0 +1,14 @@
+html {
+    font-family: 'Play', sans-serif;
+}
+
+#player {
+    color: red;
+}
+
+#computer {
+    color: blue;
+}
+#Rock, #Scissors, #Paper {
+    padding: 40px;
+}

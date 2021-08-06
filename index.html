@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
 
     <!-- Font Awesome Kit-->
     <script src="https://kit.fontawesome.com/5251ebbd60.js" crossorigin="anonymous"></script>
@@ -17,16 +18,24 @@
 
 </head>
 <body>
-    <h2>Computer Choice:<span id="computer-choice"></span></h2>
-    <h2>Player Choice:<span id="user-choice"></span></h2>
-    <h2>Result:<span id="result"></span></h2>
-    <h2>You<span id="user-score"></span></h2>
-    <h2>Computer<span id="computer-score"></span></h2>
+    <!--Game Area-->
+    <h2 id ="computer">Computer Choice:<br><span id="computer-choice"></span></h2>
+    <h2 id="player">Player Choice:<br><span id="user-choice"></span></h2>
+    <h2>Result:<br><span id="result"></span></h2>
 
-    <button id="Rock">Rock</button>
-    <button id="Paper">Paper</button>
-    <button id="Scissors">Scissors</button>
+    <div>
+    <!--Rock-->
+    <button id="Rock">Rock<i class="far fa-hand-rock"></i></button>
+    <!--Paper-->
+    <button id="Paper">Paper<i class="far fa-hand-paper"></i></button>
+    <!--Scissors-->
+    <button id="Scissors">Scissors<i class="far fa-hand-scissors"></i></button>
+    </div>
 
+    <!-- Score Area -->
+    <h2>Score</h2>
+    <h2 id="player">You:<span id="user-score"></span></h2>
+    <h2 id="computer">Computer:<span id="computer-score"></span></h2>
 
 
     <script src="assets/script.js"></script>
