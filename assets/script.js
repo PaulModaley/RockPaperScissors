@@ -6,6 +6,8 @@ const possibleChoices = document.querySelectorAll('button')
 let userChoice
 let computerChoice
 let result
+let userScore = 0;
+let computerScore = 0;
 
 //event listener for clicks
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
@@ -34,24 +36,30 @@ function generateComputerChoice() {
   function getResult() {
     if (computerChoice === userChoice) {
       result = 'its a draw!'
-    }
-    if (computerChoice === 'rock' && userChoice === "paper") {
+    } 
+    if (computerChoice === 'Rock' && userChoice === 'Paper') {
       result = 'you win!'
+      document.getElementById('user-score').innerText = ++userScore
     }
-    if (computerChoice === 'rock' && userChoice === "scissors") {
+    if (computerChoice === 'Rock' && userChoice === 'Scissors') {
       result = 'you lost!'
+      parseInt(document.getElementById('user-score').innerText) = ++computerScore
     }
-    if (computerChoice === 'paper' && userChoice === "scissors") {
+    if (computerChoice === 'Paper' && userChoice === 'Scissors') {
       result = 'you win!'
+      parseInt(document.getElementById('computer-score').innerText) = ++computerScore
     }
-    if (computerChoice === 'paper' && userChoice === "rock") {
+    if (computerChoice === 'Paper' && userChoice === 'Rock') {
       result = 'you lose!'
+      parseInt(document.getElementById('computer-score').innerText) = ++computerScore
     }
-    if (computerChoice === 'scissors' && userChoice === "rock") {
+    if (computerChoice === 'Scissors' && userChoice === 'Rock') {
       result = 'you win!'
+      parseInt(document.getElementById('computer-score').innerText) = ++computerScore
     }
-    if (computerChoice === 'scissors' && userChoice === "paper") {
+    if (computerChoice === 'Scissors' && userChoice === 'Paper') {
       result = 'you lose!'
+      parseInt(document.getElementById('user-score').innerText) = ++userScore
     }
     resultDisplay.innerHTML = result
   }
