@@ -11,4 +11,17 @@ html {
 }
 #Rock, #Scissors, #Paper {
     padding: 40px;
+    font-family: 'Play', sans-serif;
+}
+
+#button-area {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+.computer {
+    
+}
+.player {
+    
 }
