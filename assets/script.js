@@ -32,7 +32,7 @@ function generateComputerChoice() {
     }
     computerChoiceDisplay.innerHTML = computerChoice
   }
-  //function including 'if' statements for game outcome
+  //function including 'if' statements for game outcome. SCORING NEEDS WORK!
   function getResult() {
     if (computerChoice === userChoice) {
       result = 'its a draw!'
@@ -43,11 +43,11 @@ function generateComputerChoice() {
     }
     if (computerChoice === 'Rock' && userChoice === 'Scissors') {
       result = 'you lost!'
-      parseInt(document.getElementById('user-score').innerText) = ++computerScore
+      parseInt(document.getElementById('computer-score').innerText) = ++computerScore
     }
     if (computerChoice === 'Paper' && userChoice === 'Scissors') {
       result = 'you win!'
-      parseInt(document.getElementById('computer-score').innerText) = ++computerScore
+      parseInt(document.getElementById('user-score').innerText) = ++userScore
     }
     if (computerChoice === 'Paper' && userChoice === 'Rock') {
       result = 'you lose!'
@@ -55,11 +55,11 @@ function generateComputerChoice() {
     }
     if (computerChoice === 'Scissors' && userChoice === 'Rock') {
       result = 'you win!'
-      parseInt(document.getElementById('computer-score').innerText) = ++computerScore
+      parseInt(document.getElementById('user-score').innerText) = ++userScore
     }
     if (computerChoice === 'Scissors' && userChoice === 'Paper') {
       result = 'you lose!'
-      parseInt(document.getElementById('user-score').innerText) = ++userScore
+      parseInt(document.getElementById('computer-score').innerText) = ++computerScore
     }
     resultDisplay.innerHTML = result
   }
