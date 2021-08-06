@@ -1,32 +1,30 @@
-//Variables
-
+//variables
 const computerChoiceDisplay = document.getElementById('computer-choice')
-const playerChoiceDisplay = document.getElementById('player-choice')
-const result = document.getElementById('result')
+const userChoiceDisplay = document.getElementById('user-choice')
+const resultDisplay = document.getElementById('result')
 const possibleChoices = document.querySelectorAll('button')
-let playerChoice
+let userChoice
 let computerChoice
+let result
 
-// Click event listener
-
+//event listener for clicks
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
-    playerChoice = e.target.id
-    playerChoiceDisplay.innerHTML = playerChoice
-    generateComputerChoice
+  userChoice = e.target.id
+  userChoiceDisplay.innerHTML = userChoice
+  generateComputerChoice()
+  getResult()
 }))
-
-//function for computer's choice
-function generateComputerChoice () {
-    const randomNumber = Math.floor(Math.random() * possibleChoices.length) +1
-
-    if (randomNumber = 1) {
-        computerChoice = 'rock'
+function generateComputerChoice() {
+    const randomNumber = Math.floor(Math.random() * 3) + 1 // or you can use possibleChoices.length
+    
+    if (randomNumber === 1) {
+      computerChoice = 'Rock'
     }
-    if (randomNumber = 2) {
-        computerChoice = 'paper'
+    if (randomNumber === 2) {
+      computerChoice = 'Scissors'
     }
-    if (randomNumber = 3) {
-        computerChoice = 'scissors'
+    if (randomNumber === 3) {
+      computerChoice = 'Paper'
     }
     computerChoiceDisplay.innerHTML = computerChoice
-} 
+  }
