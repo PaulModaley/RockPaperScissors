@@ -1,7 +1,9 @@
 html {
     font-family: 'Play', sans-serif;
 }
-
+body {
+    background-color: #efefef;
+}
 #player {
     color: red;
 }
@@ -12,6 +14,8 @@ html {
 #Rock, #Scissors, #Paper {
     padding: 40px;
     font-family: 'Play', sans-serif;
+    margin: auto;
+    border-bottom-right-radius: 2px;
 }
 
 #button-area {
