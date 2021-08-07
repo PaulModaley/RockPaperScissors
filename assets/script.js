@@ -35,31 +35,31 @@ function generateComputerChoice() {
   //function including 'if' statements for game outcome. SCORING NEEDS WORK!
   function getResult() {
     if (computerChoice === userChoice) {
-      result = 'its a draw!'
+      result = ' Draw!'
     } 
     if (computerChoice === 'Rock' && userChoice === 'Paper') {
-      result = 'you win!'
-      document.getElementById('user-score').innerText = ++userScore
+      result = ' You win!'
+      
     }
     if (computerChoice === 'Rock' && userChoice === 'Scissors') {
-      result = 'you lost!'
-      parseInt(document.getElementById('computer-score').innerText) = ++computerScore
+      result = 'You lost!'
+      
     }
     if (computerChoice === 'Paper' && userChoice === 'Scissors') {
-      result = 'you win!'
-      parseInt(document.getElementById('user-score').innerText) = ++userScore
+      result = 'You win!'
+      
     }
     if (computerChoice === 'Paper' && userChoice === 'Rock') {
-      result = 'you lose!'
-      parseInt(document.getElementById('computer-score').innerText) = ++computerScore
+      result = ' You lose!'
+      
     }
     if (computerChoice === 'Scissors' && userChoice === 'Rock') {
-      result = 'you win!'
-      parseInt(document.getElementById('user-score').innerText) = ++userScore
+      result = ' You win!'
+      
     }
     if (computerChoice === 'Scissors' && userChoice === 'Paper') {
       result = 'you lose!'
-      parseInt(document.getElementById('computer-score').innerText) = ++computerScore
+      
     }
     resultDisplay.innerHTML = result
   }
