@@ -28,7 +28,7 @@ body {
     color: transparent;
     border: transparent;
 }
-
+/* styling for player controls*/
 #button-area {
     margin: auto;
     width: 50%;
@@ -38,17 +38,31 @@ body {
     background-image: url(../rock.png);
     background-size: contain;
     background-repeat: no-repeat;
+    transition: transform .2s;
+}
+#Rock:hover {
+    transform: scale(1.1);
 }
 #Paper {
     background-image: url(../paper.png);
     background-size: contain;
     background-repeat: no-repeat;
+    transition: transform .2s;
+}
+#Paper:hover {
+    transform: scale(1.1);
 }
 #Scissors {
     background-image: url(../scissors.png);
     background-size: contain;
     background-repeat: no-repeat;
+    transition: transform .2s;
 }
+#Scissors:hover {
+    transform: scale(1.1);
+}
+
+/*styling for results*/
 #result-text {
     color: white;
     font-size: 400%;

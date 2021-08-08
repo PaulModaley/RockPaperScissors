@@ -10,6 +10,7 @@ let userScore = 0;
 let computerScore = 0;
 
 
+
 //event listener for clicks
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
   userChoice = e.target.id
