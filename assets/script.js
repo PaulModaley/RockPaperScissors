@@ -36,7 +36,7 @@ function generateComputerChoice() {
     }
     computerChoiceDisplay.innerHTML = computerChoice
   }
-  //function including 'if' statements for game outcome. 
+  //function including 'if' statements for game outcome and scoring
   function getResult() {
     if (computerChoice === userChoice) {
       result = ' Draw!'
@@ -69,4 +69,8 @@ function generateComputerChoice() {
     resultDisplay.innerHTML = result
   }
 
-
+//start working on game over function
+function endGame() {
+  if (computerScore === 10)
+    document.getElementById('body').innerHTML = 'Game Over';
+}
