@@ -12,16 +12,21 @@ body {
 }
 #player {
     color: red;
+    font-size: 300%;
 }
 
 #computer {
     color: blue;
+    font-size: 300%;
 }
 #Rock, #Scissors, #Paper {
-    padding: 40px;
+    padding: 90px;
     font-family: 'Bangers', sans-serif;
     margin: auto;
-    border-bottom-right-radius: 2px;
+    font-size: xx-large;
+    background-color: transparent;
+    color: transparent;
+    border: transparent;
 }
 
 #button-area {
@@ -29,7 +34,21 @@ body {
     width: 50%;
     text-align: center;
 }
-
+#Rock {
+    background-image: url(../rock.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#Paper {
+    background-image: url(../paper.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#Scissors {
+    background-image: url(../scissors.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
   
   .row {
     display: flex;
@@ -46,7 +65,7 @@ body {
   .score-row {
     display: flex;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 70px;
   }
   
   /* Create 2 equal columns that sit next to each other */
