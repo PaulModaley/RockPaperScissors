@@ -49,7 +49,11 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
 }
-  
+#result-text {
+    color: white;
+    font-size: 400%;
+    letter-spacing: 4px;
+}
   .row {
     display: flex;
     text-align: center;
