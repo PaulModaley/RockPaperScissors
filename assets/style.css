@@ -23,17 +23,28 @@ body {
     width: 50%;
     text-align: center;
 }
-.* {
-    box-sizing: border-box;
-  }
+
   
   .row {
     display: flex;
     text-align: center;
+    margin-top: 100px;
   }
   
   /* Create 2 equal columns that sit next to each other */
   .column {
+    flex: 50%;
+    padding: 5px;
+  }
+
+  .score-row {
+    display: flex;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  /* Create 2 equal columns that sit next to each other */
+  .score-column {
     flex: 50%;
     padding: 5px;
   }

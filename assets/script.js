@@ -42,7 +42,7 @@ function generateComputerChoice() {
       
     }
     if (computerChoice === 'Rock' && userChoice === 'Scissors') {
-      result = 'You lost!'
+      result = 'You lose!'
       
     }
     if (computerChoice === 'Paper' && userChoice === 'Scissors') {
@@ -58,7 +58,7 @@ function generateComputerChoice() {
       
     }
     if (computerChoice === 'Scissors' && userChoice === 'Paper') {
-      result = 'you lose!'
+      result = 'You lose!'
       
     }
     resultDisplay.innerHTML = result
