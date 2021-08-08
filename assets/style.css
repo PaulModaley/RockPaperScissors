@@ -1,8 +1,14 @@
+@import url(https://fonts.googleapis.com/css2?family=Bangers&display=swap);
 html {
-    font-family: 'Play', sans-serif;
+    font-family: 'Bangers', sans-serif;
+    letter-spacing: 3px;
+    
 }
 body {
     background-color: #efefef;
+    background-image: url(../background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #player {
     color: red;
@@ -13,7 +19,7 @@ body {
 }
 #Rock, #Scissors, #Paper {
     padding: 40px;
-    font-family: 'Play', sans-serif;
+    font-family: 'Bangers', sans-serif;
     margin: auto;
     border-bottom-right-radius: 2px;
 }

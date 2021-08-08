@@ -9,6 +9,7 @@ let result
 let userScore = 0;
 let computerScore = 0;
 
+
 //event listener for clicks
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
   userChoice = e.target.id
@@ -62,4 +63,10 @@ function generateComputerChoice() {
       
     }
     resultDisplay.innerHTML = result
+  }
+
+  function score() {
+    if (result ='You win!') {
+    parseInt(document.getElementById('user-score').innerText) = ++userScore
+    }
   }
