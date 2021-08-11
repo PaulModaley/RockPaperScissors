@@ -9,7 +9,8 @@ let computerChoice
 let result
 let userScore = 0;
 let computerScore = 0;
-
+let maxScore= 10;
+let gameOver
 
 
 
@@ -68,9 +69,7 @@ function generateComputerChoice() {
     }
     resultDisplay.innerHTML = result
   }
-
-//start working on game over function
-function endGame() {
-  if (computerScore === 10)
-    document.getElementById('body').innerHTML = 'Game Over';
+  if (computerScore === 10) {
+    alert('Game Over')
 }
+
