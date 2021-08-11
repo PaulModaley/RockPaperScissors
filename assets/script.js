@@ -9,9 +9,7 @@ let computerChoice
 let result
 let userScore = 0;
 let computerScore = 0;
-let maxScore= 10;
 let gameOver
-
 
 
 //event listener for clicks
@@ -69,7 +67,4 @@ function generateComputerChoice() {
     }
     resultDisplay.innerHTML = result
   }
-  if (computerScore === 10) {
-    alert('Game Over')
-}
 

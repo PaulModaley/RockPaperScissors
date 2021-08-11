@@ -2,6 +2,8 @@
 html {
     font-family: 'Bangers', sans-serif;
     letter-spacing: 3px;
+    height: 100vh;
+    overflow: hidden;
     
 }
 body {
@@ -20,7 +22,7 @@ body {
     font-size: 300%;
 }
 #Rock, #Scissors, #Paper {
-    padding: 90px;
+    padding: 50px;
     font-family: 'Bangers', sans-serif;
     margin: auto;
     font-size: xx-large;
@@ -68,13 +70,13 @@ body {
 /*styling for results*/
 #result-text {
     color: white;
-    font-size: 400%;
+    font-size: 180%;
     letter-spacing: 4px;
 }
   .row {
     display: flex;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 90px;
   }
   
   /* Create 2 equal columns that sit next to each other */
@@ -86,7 +88,8 @@ body {
   .score-row {
     display: flex;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 50px;
+    font-size: 50%;
   }
   
   /* Create 2 equal columns that sit next to each other */
